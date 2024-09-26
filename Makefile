@@ -1,2 +1,11 @@
-01-allocating-memory: 01-allocating-memory.c
-	gcc -Wall -ggdb -o 01-allocating-memory.exe 01-allocating-memory.c
+EXE=01-allocating-memory.exe 02-reading-files.exe
+
+.PHONY: all
+all: $(EXE)
+
+%.exe: %.c
+	gcc -Wall -o $@ $<
+
+.PHONY: clean
+clean:
+	rm -rfv $(EXE)
