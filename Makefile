@@ -1,4 +1,4 @@
-EXE=01-allocating-memory.exe 02-reading-files.exe
+EXE=01-allocating-memory.exe 02-reading-files.exe 03-ipc.exe
 
 .PHONY: all
 all: $(EXE)
